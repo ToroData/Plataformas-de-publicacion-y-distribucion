@@ -19,7 +19,7 @@ st.sidebar.title("Navegación")
 st.sidebar.markdown("Esta aplicación la he generado con Streamlit. En esta barra de navegación se puede\
     elegir el ejercicio que se quiere consultar. Además, cada ejercicio tiene un apartado con los assets\
     referenciados en el ejercicio.")
-st.sidebar.markdown("Si quieres ver el código de la aplicación, puedes hacerlo [aquí]()")
+st.sidebar.markdown("Si quieres ver el código de la aplicación, puedes hacerlo [aquí](https://github.com/ToroData/Plataformas-de-publicacion-y-distribucion)")
 st.sidebar.markdown("Para acceder a todos los vídeo assets como ZIP comprimido, puedes hacerlo [aquí]()")
 selection = st.sidebar.radio("Ir a:", list(exercises.keys()))
 # ***--- Sidebar ---***
