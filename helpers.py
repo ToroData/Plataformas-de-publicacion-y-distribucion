@@ -1,10 +1,15 @@
 import streamlit as st
+import requests
 
-def set_img(img_path, caption_img, subheader_img=None):
+def set_img(url, caption_img, subheader_img=None):
     if subheader_img:
         st.subheader(subheader_img)
-    st.image(img_path, caption=caption_img)
+    response = requests.get(url)
+    img_bytes = response.content
+    st.image(img_bytes, caption=caption_img)
 
-def set_video(subheader_video, video_path):
+def set_video(subheader_video, url):
     st.subheader(subheader_video)
-    st.video(video_path)
+    response = requests.get(url)
+    video_bytes = response.content
+    st.video(video_bytes)
