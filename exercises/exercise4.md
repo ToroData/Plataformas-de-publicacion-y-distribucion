@@ -45,9 +45,7 @@ El factor de compresión con hevc-70 era de $\approx 1.61$ mientras que para hev
 
 ## Tarea 4.8
 
-
-## Tarea 4.9
-
+Con GOP fijo a 30 se está imponiendo que se use un I-frame cada 30 frames sin posibilidad de adaptarse a la dinámica de la escena. Justo con esta configuración, en la escena dinámica que he grabado ha aumentado la fluidez, sin embargo, en escenas que fueran estáticas se estaría desperdiciando el potencial de compresión. Además, uno puede apreciar, por ejemplo, en los arboles que hay un efecto raro en las hojas con el movimiento de la cámara producido por la reorganización de bits no óptima localmetne por la rigidez de los GOP fijos. A nivel de compresión no ha afectado mucho. De hecho solo aumenta 0.1 MiB, pero esto, entiendo que es fruto de que la escena tiene mucho movimiento; si tuviera poco movimiento, podría verse una pérdida de capacidad de compresión.
 
 ## Referencias
 

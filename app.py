@@ -20,12 +20,19 @@ st.sidebar.markdown("Esta aplicación la he generado con Streamlit. En esta barr
     elegir el ejercicio que se quiere consultar. Además, cada ejercicio tiene un apartado con los assets\
     referenciados en el ejercicio.")
 st.sidebar.markdown("Si quieres ver el código de la aplicación, puedes hacerlo [aquí](https://github.com/ToroData/Plataformas-de-publicacion-y-distribucion)")
-st.sidebar.markdown("Para acceder a todos los vídeo assets como ZIP comprimido, puedes hacerlo [aquí]()")
+st.sidebar.markdown("Para acceder a todos los vídeo assets como ZIP comprimido, puedes hacerlo [aquí](https://plataforma-distribucion-streamlit.s3.eu-west-3.amazonaws.com/PEC2_raigada_garc%C3%ADa_ricard_santiago.zip)")
 selection = st.sidebar.radio("Ir a:", list(exercises.keys()))
 # ***--- Sidebar ---***
 
 
 # ***--- Main ---***
+st.markdown("### Ricard Santiago Raigada García")
+st.download_button(
+    label="Descargar PEC2 Assets ZIP",
+    data="https://plataforma-distribucion-streamlit.s3.eu-west-3.amazonaws.com/PEC2_raigada_garc%C3%ADa_ricard_santiago.zip",
+    file_name="pec2_assets.zip",
+    mime="application/zip"
+)
 st.title(selection)
 
 with open(exercises[selection], "r", encoding="utf-8") as file:
