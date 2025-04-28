@@ -30,7 +30,7 @@ st.markdown("### Ricard Santiago Raigada García")
 st.download_button(
     label="Descargar PEC2 Assets ZIP",
     data="https://plataforma-distribucion-streamlit.s3.eu-west-3.amazonaws.com/PEC2_raigada_garc%C3%ADa_ricard_santiago.zip",
-    file_name="pec2_assets.zip",
+    file_name="PEC2_raigada_garcía_ricard_santiago.zip",
     mime="application/zip"
 )
 st.title(selection)
