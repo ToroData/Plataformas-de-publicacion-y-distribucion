@@ -89,4 +89,17 @@ with tab2:
             "https://plataforma-distribucion-streamlit.s3.eu-west-3.amazonaws.com/propiedades-pec2_dvd_m3_n15.png",
             "Fig. 2. Propiedades del pec2_dvd_m3_n15"
         )
+    elif selection == "Ejercicio 4":
+        set_video(
+            "hevc-70",
+            "https://plataforma-distribucion-streamlit.s3.eu-west-3.amazonaws.com/hevc-70.mkv",
+        )
+        set_video(
+            "hevc-40",
+            "https://plataforma-distribucion-streamlit.s3.eu-west-3.amazonaws.com/hevc-40.mkv"
+        )
+        set_video(
+            "hevc-40-gop-30",
+            "https://plataforma-distribucion-streamlit.s3.eu-west-3.amazonaws.com/hevc-40-gop-30.mkv"
+        )
 # ***--- Main ---***
